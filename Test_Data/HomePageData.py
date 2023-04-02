@@ -4,7 +4,7 @@ class HomePageData:
 
     @staticmethod
     def getExcelData(test_case_name):
-        book = openpyxl.load_workbook("C:\\Users\\piyus\\Desktop\\lp3thw\\Python Testing\\PythonSeleniumProject\\Test_Data\\input_data.xlsx")
+        book = openpyxl.load_workbook("/Resources/input_data.xlsx")
         sheet = book.active
         Dict = {}
         for i in range(1, sheet.max_row + 1):
